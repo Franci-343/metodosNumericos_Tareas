@@ -1,20 +1,26 @@
-# Ejemplo en el area militar (sistema de punteria)
-
-# En este ejemplo veras una tipica mira cruzada de tirador
-# la mira tiene una regla como todas las miras pero a pesar de apuntar al blanco
-# el proyectil se va un poco a la izquierda o derecha, arriba o abajo 
-# el tirador puede ajustar o corregir su arma para afinar su punteria
 
 """
 Ejemplo práctico: sistema de puntería y análisis de errores.
 
 Descripción:
 - Simulamos un conjunto de ángulos de puntería verdaderos (no nulos) y
-  las lecturas reales del tirador (con sesgo y ruido).
+	las lecturas reales del tirador (con sesgo y ruido).
 - Calculamos error absoluto y relativo en grados (ver README).
 - Representamos gráficas: verdadero vs real, errores por disparo, impactos en plano
 - Opcional: ventana GUI con matplotlib embebido (si tkinter está disponible)
 
+Historia:
+En una zona montañosa, un equipo de francotiradores debe ajustar sus miras antes de
+una misión de entrenamiento. La topografía y el viento provocan desviaciones muy
+pequeñas en ángulos medidos, pero estos se traducen en metros de diferencia en el
+impacto para blancos a gran distancia. La sargento Elena toma notas de cada ajuste
+y su equipo registra las desviaciones laterales en un blanco objetivo. Con estos
+datos, el equipo analiza el comportamiento del sesgo y el ruido para mejorar la
+calibración de sus armas.
+
+El presente script simula esa situación: genera ángulos verdaderos y medidos,
+calcula errores absolutos/relativos y proyecta los impactos en el plano del blanco
+para visualizar la dispersión y el posible sesgo sistemático.
 """
 
 import os

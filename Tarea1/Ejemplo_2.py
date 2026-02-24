@@ -1,8 +1,3 @@
-# Ejemplo en el area militar (calculos en caida de balas)
-
-# Una persona dispara con su pistola a un blanco lejano
-# debido a la gravedad, el proyectil cae y no llega al blanco, el tirador ajusta su punteria para acertar al blanco en grados
-# el tirador comete errores y va ajustando su punteria para acertar al blanco en grados, el tirador tiene un error de 0.5 grados en cada disparo, el tirador dispara 10 veces
 
 """
 Ejemplo práctico: caída de proyectiles y análisis de errores.
@@ -12,6 +7,16 @@ Este script:
 - Simula 10 disparos con error del tirador (sigma ~ 0.5°)
 - Calcula error absoluto y relativo (ver README)
 - Guarda gráficos con matplotlib y ofrece una vista rápida con tkinter
+
+Historia:
+En el polígono de prácticas de la academia, el instructor José ha preparado una
+actividad donde cada cadete debe estimar la elevación correcta para alcanzar un
+objetivo a distancia. Algunos cadetes tienden a sobreestimar la inclinación y otros
+a subestimar; además, las condiciones ambientales simulan una ligera variación.
+El propósito es medir cómo pequeñas diferencias angulares (en décimas o medias de
+grado) se traducen en variaciones considerables del alcance por efecto de la
+parábola del proyectil. Este ejemplo muestra cómo modelar y cuantificar esos errores
+usando fórmulas físicas básicas y medidas simuladas.
 
 """
 

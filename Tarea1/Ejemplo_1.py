@@ -7,6 +7,17 @@ Descripción:
 - Se calculan error absoluto y error relativo según el README
 - Se guardan gráficos con matplotlib y (opcional) se muestra una GUI con tkinter
 
+Historia:
+En una rotación de entrenamiento, la teniente María supervisa la puesta a punto de
+un cañón remolcado antes de una demostración. El equipo registra el ángulo teórico
+que debería alcanzar el blanco y luego anota el ángulo real ajustado por el tirador.
+Las pequeñas diferencias angulares —causadas por errores humanos o por una montura
+mal calibrada— se traducen en desviaciones apreciables en el impacto. El ejercicio
+consiste en cuantificar esos errores, identificar sesgos sistemáticos y presentar
+gráficas que faciliten la toma de decisiones para recalibrar el sistema de tiro.
+
+Este docstring añade contexto narrativo al ejemplo: los "ángulos verdaderos" son
+la puntería ideal y los "ángulos disparados" las medidas reales con ruido y sesgo.
 """
 
 import os
